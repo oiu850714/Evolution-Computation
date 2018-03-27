@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evo HW1</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="homework-1">Homework #1</h1>
+<ol>
+<li>
+<p>The eight queens problem.<br>
+a. 假設一個棋盤上面擺八支皇后的狀態就是一個 phenotype，則 phenotype space 大小約莫是 <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>6</mn><msup><mn>4</mn><mn>8</mn></msup></mrow><annotation encoding="application/x-tex">64^8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.814108em;"></span><span class="strut bottom" style="height: 0.814108em; vertical-align: 0em;"></span><span class="base"><span class="mord mathrm">6</span><span class="mord"><span class="mord mathrm">4</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathrm mtight">8</span></span></span></span></span></span></span></span></span></span></span></span><br>
+b. 根據第三份投影片 p.25 的 genotype 就可。<br>
+c. <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>8</mn><mo>!</mo></mrow><annotation encoding="application/x-tex">8!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.69444em;"></span><span class="strut bottom" style="height: 0.69444em; vertical-align: 0em;"></span><span class="base"><span class="mord mathrm">8</span><span class="mclose">!</span></span></span></span></span><br>
+d. 如果 cover 的意義是給定一個 phenotype 都要能有對應的 genotype 的話，那講義上的方法是不行的，因為 <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∣</mi><mi>p</mi><mi>h</mi><mi>e</mi><mi>n</mi><mi>o</mi><mi>t</mi><mi>y</mi><mi>p</mi><mi>e</mi><mtext>&nbsp;</mtext><mi>s</mi><mi>p</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi mathvariant="normal">∣</mi><mo>&lt;</mo><mi mathvariant="normal">∣</mi><mi>g</mi><mi>e</mi><mi>n</mi><mi>o</mi><mi>t</mi><mi>y</mi><mi>p</mi><mi>e</mi><mtext>&nbsp;</mtext><mi>s</mi><mi>p</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|phenotype\ space| &lt; |genotype\ space|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base"><span class="mord mathrm">∣</span><span class="mord mathit">p</span><span class="mord mathit">h</span><span class="mord mathit">e</span><span class="mord mathit">n</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span style="margin-right: 0.03588em;" class="mord mathit">y</span><span class="mord mathit">p</span><span class="mord mathit">e</span><span class="mord mathit"><span class="mspace">&nbsp;</span><span class="mord mathit">s</span></span><span class="mord mathit">p</span><span class="mord mathit">a</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mord mathrm">∣</span><span class="mrel">&lt;</span><span class="mord mathrm">∣</span><span style="margin-right: 0.03588em;" class="mord mathit">g</span><span class="mord mathit">e</span><span class="mord mathit">n</span><span class="mord mathit">o</span><span class="mord mathit">t</span><span style="margin-right: 0.03588em;" class="mord mathit">y</span><span class="mord mathit">p</span><span class="mord mathit">e</span><span class="mord mathit"><span class="mspace">&nbsp;</span><span class="mord mathit">s</span></span><span class="mord mathit">p</span><span class="mord mathit">a</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mord mathrm">∣</span></span></span></span></span>；但如果 cover 是指所有的正確的八皇后解的 phenotype 都找的到對應的 genotype 的話，那講義的方法是可以的，因為一個八皇后解必定是一個 1 到 8 的排序，講義的 genotype 可以表示全部的 1 到 8 的排序，所以講義的 genotype 可以表示所有八皇后的解。</p>
+</li>
+<li>
+<p>如果找到的解要跟最佳解有 <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>&lt;</mo><mo>=</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>0</mn><mn>0</mn><mn>1</mn></mrow><annotation encoding="application/x-tex">&lt;= 0.001</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.64444em;"></span><span class="strut bottom" style="height: 0.68354em; vertical-align: -0.0391em;"></span><span class="base"><span class="mrel">&lt;</span><span class="mrel">=</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span><span class="mord mathrm">1</span></span></span></span></span> 的誤差，那至少要把 <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>[</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo>]</mo></mrow><annotation encoding="application/x-tex">[0, 1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base"><span class="mopen">[</span><span class="mord mathrm">0</span><span class="mpunct">,</span><span class="mord mathrm">1</span><span class="mclose">]</span></span></span></span></span> 這個區間區分成一千等分；如果每一等分都要以一個 bit string 來表示，那至少要 10 bits 才能表示一千等分。</p>
+</li>
+<li></li>
+<li></li>
+<li>
+<p><img src="https://i.imgur.com/rGI2W64.png" alt=""></p>
+<ul>
+<li>藍線為第三題，橘線為第四題</li>
+<li>其實這在第四分投影片的 p.59-60 有描述:
+<ul>
+<li>fitness-based selection 可能會被 superstar 影響，讓 diversity 變低，我認為這是為何藍線很難上升到 50 的原因</li>
+<li>而橘線則是被 drifting 跟 function transposition 共同影響；先 shift function 後導致用 fitness value 算出來的 roulette wheel selection 的比例都差不多，這又間接導致 drifting，所以每一世代的 best fitness value 都差不多。至於為什麼甚至會有一點下降的趨勢我就不是很清楚了。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+<li></li>
+<li>
+<p><img src="https://i.imgur.com/mzbVRrf.png" alt=""></p>
+<ul>
+<li>tournament 單純只看 individuals 之間的排名，而不是看 fitness value 決定個體被選定的機率。故雖然 fitness function 有改變，但只要有維持 individuals 之間原本的 order，理論上平均結果會是一樣的。</li>
+</ul>
+</li>
+<li>
+<p><img src="https://i.imgur.com/5vQQClD.png" alt=""></p>
+<ul>
+<li>整體來說 tournament selection 的效果比較好，而且也比較穩定</li>
+</ul>
+</li>
+</ol>
+</div>
+</body>
+
+</html>
